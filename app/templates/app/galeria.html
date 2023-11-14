@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,5 +11,8 @@
 </head>
 <body>
     <h1>galeria</h1>
+    {% comment %} <img src="{% static 'app/images/python.png' %}" alt=""> {% endcomment %}
+    <p>ir para index</p>
+    <button><a href="{% url 'home' %}">clique</a></button>
 </body>
 </html>
