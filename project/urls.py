@@ -23,7 +23,14 @@ from app import views
 # todas as urls
 
 urlpatterns = [
-    path('', views.home),
+    path('', views.index),
+    path('estagios/', views.estagios),
+    path('cursos/',views.cursos),
+    path('como_ingressar/', views.como_ingressar),
+    path('galeria/', views.galeria),
+    path('contato/', views.contato),
+    path('about/', views.about),
+
+
     path('admin/', admin.site.urls),
-    
 ]
